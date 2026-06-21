@@ -82,6 +82,8 @@ passport = st.selectbox(
     ["Yes", "No"]
 )
 
+passport = 1 if passport == "Yes" else 0
+
 pitch_satisfaction_score = st.slider(
     "Pitch Satisfaction Score",
     min_value=1,
@@ -93,6 +95,8 @@ own_car = st.selectbox(
     "Own Car",
     ["Yes", "No"]
 )
+
+own_car = 1 if own_car == "Yes" else 0
 
 num_children_visiting = st.number_input(
     "Number of Children Visiting",
